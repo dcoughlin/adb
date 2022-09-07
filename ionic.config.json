@@ -1,0 +1,7 @@
+{
+  "name": "adb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
