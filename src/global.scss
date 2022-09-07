@@ -24,3 +24,22 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+  --ion-toolbar-background: var(--ion-color-primary);
+  --ion-toolbar-color: var(--ion-color-primary-contrast);
+
+  // --ion-tab-bar-background: var(--ion-color-primary);
+  // --ion-tab-bar-color: var(--ion-color-primary);
+  --ion-tab-bar-color-activated: var(--ion-color-primary);
+
+  // --ion-menu-background: var(--ion-color-primary);
+  // --ion-menu-color: var(--ion-color-primary-contrast);
+
+  // --ion-header-background: var(--ion-color-primary);
+  // --ion-header-color: var(--ion-color-primary-contrast);
+
+  // --app-header-background: var(--ion-color-primary);
+  // --app-header-color: var(--ion-color-primary-contrast);
+}
+
