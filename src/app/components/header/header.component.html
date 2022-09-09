@@ -1,3 +1,20 @@
-<p>
-  header works!
-</p>
+<ion-row class="header ion-align-items-center" color="primary">
+  <ion-col size="1" color="primary">
+    <img src="assets/bmo_header_logo.jpg" width="100px">
+  </ion-col>
+  <ion-col size="2">
+    <ion-title>
+      {{ title }}
+    </ion-title>
+  </ion-col>
+  <ion-col size="6">
+    <ion-button #productbtn (mouseenter)="dropdown=true" (mouseleave)="hideDropdown($event)" fill="clear" 
+      class="dropdown-btn"  color="light"  routerLink="/products" routerDirection="root" routerLinkActive="active-item">
+        Products
+      <ion-icon slot="end" [name]="dropdown ? 'chevron-down' : 'chevron-up'"></ion-icon>
+    </ion-button>
+  </ion-col>
+  <ion-col size="3" >
+    <menu-icons-container></menu-icons-container>
+  </ion-col>
+</ion-row>

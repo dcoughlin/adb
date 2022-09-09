@@ -1,0 +1,31 @@
+{
+  "Customer" : {
+    "ID" : "1",
+    "FirstName" : "Dan",
+    "LastName" : "Coughlin",
+    "Email": "dan@agentiq.com",
+    "Primary CIF": "1001"
+  }, 
+  "Accounts" : [ {
+    "ID" : "1",
+    "CustID": "1",
+    "Icon": "cash",
+    "Name": "Money Market",
+    "Desc" : "Checking *2323",
+    "Balance": "$1,212.32"
+  }, {
+    "ID" : "2",
+    "CustID": "1",
+    "Icon": "wallet",
+    "Name" : "IRA",
+    "Desc" : "Savings *8323",
+    "Balance": "$21,232.00"
+  }, {
+    "ID" : "3",
+    "CustID": "1",
+    "Icon": "card",
+    "Name" : "Credit Cards",
+    "Desc" : "BMO Elite Mastercard *1234",
+    "Balance": "-($2,212.37)"
+  }]
+}
