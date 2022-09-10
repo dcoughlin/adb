@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ChatComponentModule } from './components/chat/chat.component.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, 
     IonicModule.forRoot(),
     AppRoutingModule, 
+    ChatComponentModule,
     HttpClientModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

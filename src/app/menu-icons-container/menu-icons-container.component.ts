@@ -14,7 +14,7 @@ export class MenuIconsContainerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
-cQuagmire6277
+
   launchChat() {
     alert('lauchChat');
     // window.__aiq.triggerWorkflow('aiq_init_customer_dispatch');

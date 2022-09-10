@@ -7,6 +7,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { HeaderComponentModule } from '../components/header/header.component.module';
 import { HomeTabPageRoutingModule } from './home-tab-routing.module';
+import { GreetingComponentModule } from '../components/greeting/greeting.component.module';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { HomeTabPageRoutingModule } from './home-tab-routing.module';
     FormsModule,
     ExploreContainerComponentModule,
     HeaderComponentModule,
+    GreetingComponentModule,
     HomeTabPageRoutingModule
   ],
   declarations: [HomeTabPage]

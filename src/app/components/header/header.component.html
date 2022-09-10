@@ -1,20 +1,28 @@
-<ion-row class="header ion-align-items-center" color="primary">
-  <ion-col size="1" color="primary">
-    <img src="assets/bmo_header_logo.jpg" width="100px">
+<ion-row class="header ion-align-items-center" color="primary" class="full-hw">
+  <ion-col color="primary" size-xs="4" size-md="2" size-xl="1" style="xborder:dotted;">
+    <img src="assets/bmo_header_logo.jpg">
   </ion-col>
-  <ion-col size="2">
-    <ion-title>
-      {{ title }}
-    </ion-title>
-  </ion-col>
-  <ion-col size="6">
-    <ion-button #productbtn (mouseenter)="dropdown=true" (mouseleave)="hideDropdown($event)" fill="clear" 
-      class="dropdown-btn"  color="light"  routerLink="/products" routerDirection="root" routerLinkActive="active-item">
-        Products
-      <ion-icon slot="end" [name]="dropdown ? 'chevron-down' : 'chevron-up'"></ion-icon>
+  <ion-col size-xs="1" size-md="1" size-xl="2" style="border:dotted;">
+    <ion-button fill="clear" routerLink="tabs/transfer" routerDirection="root">
+      Accounts
     </ion-button>
   </ion-col>
-  <ion-col size="3" >
+  <ion-col size-xs="1" size-md="1" size-xl="2" style="border:dotted;">
+    <ion-button fill="clear" routerLink="tabs/transfer" routerDirection="root">
+      Pay & Transfer
+    </ion-button>
+  </ion-col>
+  <ion-col size-xs="1" size-md="1" size-xl="2" style="border:dotted;">
+    <ion-button fill="clear" routerLink="tabs/deposit" routerDirection="root">
+      Deposit
+    </ion-button>
+  </ion-col>
+  <ion-col size-xs="1" size-md="1" size-xl="2" style="border:dotted;">
+    <ion-button fill="clear" routerLink="tabs/more" routerDirection="forward">
+      More...
+    </ion-button>
+  </ion-col>
+  <ion-col size-xs="4" size-md="9" size-xl="3" style="xborder:dashed;">
     <menu-icons-container></menu-icons-container>
   </ion-col>
 </ion-row>

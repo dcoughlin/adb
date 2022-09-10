@@ -14,31 +14,39 @@
   font-size: 48px;
 }
 
-.full-hw {
-  width: 100%;
+/* Split the screen in half */
+.split {
   height: 100%;
-  --ion-grid-padding: 0;
-  --ion-grid-column-padding: 0;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 1;
+  overflow-x: hidden;
+  padding-top: x20px;
 }
 
+/* Control the left side */
 .left {
   left: 0;
   --ion-background-color: var(--ion-color-primary);
+  // --ion-text-color: var(--ion-color-primary-contrast);
   --ion-text-color: #FFF;
   color: #FFF;
   // border: dotted;
 }
 
+/* Control the right side */
 .right {
   right: 0;
   --ion-background-color: var(--ion-color-primary-contrast);
   --ion-text-color: #000;
-  // border: dotted;
+  // border: dashed;
 }
 
+/* If you want the content centered horizontally and vertically */
 .centered {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-40%, -50%);
   text-align: left;
@@ -49,4 +57,3 @@
   width: 150px;
   border-radius: 50%;
 }
-

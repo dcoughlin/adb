@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-transfer',
@@ -7,6 +8,26 @@ import { Component } from '@angular/core';
 })
 export class TransferTabPage {
 
-  constructor() {}
+  constructor(private alertCtrl: AlertController) {}
+
+  async errorAlert() {
+    const alert = await this.alertCtrl.create({
+      header: 'System Issue',
+      message: 'We cannot initiated a transfer at this time.  Please try again later.',
+      cssClass: 'primary',
+      buttons: [
+        {
+          text: 'OK',
+          role: 'cancel',
+          cssClass: 'secondary'
+        }
+      ]
+    });
+    await alert.present();
+  }
+
+  beginTransfer() {
+    this.errorAlert();
+  }
 
 }

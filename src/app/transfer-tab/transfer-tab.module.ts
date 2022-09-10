@@ -8,6 +8,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { HeaderComponentModule } from '../components/header/header.component.module';
 import { TransferTabPageRoutingModule } from './transfer-tab-routing.module';
+import { GreetingComponentModule } from '../components/greeting/greeting.component.module';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { TransferTabPageRoutingModule } from './transfer-tab-routing.module';
     FormsModule,
     ExploreContainerComponentModule,
     HeaderComponentModule,
+    GreetingComponentModule,
     TransferTabPageRoutingModule
   ],
   declarations: [TransferTabPage]

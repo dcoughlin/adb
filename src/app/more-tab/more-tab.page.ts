@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AdbDataService } from '../services/adb-data.service';
 
 @Component({
   selector: 'app-more',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class MoreTabPage {
 
-  constructor() {}
+  constructor(public adbDataService:  AdbDataService) {}
 
 }
