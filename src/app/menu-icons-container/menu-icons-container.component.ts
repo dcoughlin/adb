@@ -17,7 +17,7 @@ export class MenuIconsContainerComponent implements OnInit {
 
   launchChat() {
     alert('lauchChat');
-    // window.__aiq.triggerWorkflow('aiq_init_customer_dispatch');
+    window.__aiq.triggerWorkflow('aiq_init_customer_dispatch');
   }
 
   hideDropdown(event) {
