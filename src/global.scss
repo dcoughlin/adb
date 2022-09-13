@@ -36,11 +36,10 @@
 
   --ion-tab-bar-color-activated: var(--ion-color-primary);
   --ion-font-family: 'Heebo';
-
-  // --ion-background-color: var(--ion-color-primary);
-  // --ion-text-color: var(--ion-color-primary-contrast);
-
-  // --ion-tab-bar-background: var(--ion-color-primary);
-  // --ion-tab-bar-color: var(--ion-color-primary);
 }
 
+ion-button {
+  text-transform: none;
+ }
+
+ 

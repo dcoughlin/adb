@@ -22,5 +22,3 @@ import { ChatComponentModule } from './components/chat/chat.component.module';
 })
 export class AppModule {}
 
-
-// https://aiq-mobile-finance.firebaseio.com/

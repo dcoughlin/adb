@@ -7,31 +7,26 @@ import { Component, OnInit, Input, ViewChild } from '@angular/core';
 })
 export class MenuIconsContainerComponent implements OnInit {
 
+  isChatOpen = false;
+  isRendered = false;
+
   @Input() name: string;
-  dropdown = false;
-  // @ViewChild('productbtn', { read: ElementRef }) productbtn: ElementRef;
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   launchChat() {
-    alert('lauchChat');
-    window.__aiq.triggerWorkflow('aiq_init_customer_dispatch');
+    if (!this.isChatOpen) {
+      if (!this.isRendered) {
+        window.__aiq.renderChat();
+        this.isRendered = false;
+      }
+      (document.querySelector('.aiq-chat-hide') as HTMLElement).style.display = 'block'
+    } else {
+      (document.querySelector('.aiq-chat-hide') as HTMLElement).style.display = 'none'
+    }
+    this.isChatOpen = !this.isChatOpen;
   }
-
-  hideDropdown(event) {
-    const xTouch = event.clientX;
-    const yTouch = event.clientY;
-
-    // const rect = this.productbtn.nativeElement.getBoundingClientRect();
-    // const topBoundary = rect.top + 2;
-    // const leftBoundary = rect.left + 2;
-    // const rightBoundary = rect.right - 2;
-
-    // if (xTouch < leftBoundary || xTouch > rightBoundary || yTouch < topBoundary) {
-    //   this.dropdown = false;
-    // }
-  }
-
 }
